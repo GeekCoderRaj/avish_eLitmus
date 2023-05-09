@@ -6,7 +6,7 @@ const ShowCard = ({TotalScore, TimeArr}) => {
   const saveresult = async() =>{
     console.log("HI")
     const data = JSON.parse(localStorage.getItem("profile"))
-    await axios.post("http://localhost:5000/api/store",{
+    await axios.post("https://elitmus-backend-cfra.onrender.com/api/store",{
       name: data.user,
       email: data.email,
       Total_Marks: TotalScore,

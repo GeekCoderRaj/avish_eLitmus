@@ -11,7 +11,7 @@ const Register = () => {
     console.log(email);
     console.log(password)
     try {
-      const resp = await fetch('http://localhost:5000/api/register',{
+      const resp = await fetch('https://elitmus-backend-cfra.onrender.com/api/register',{
         method : "POST",
         headers :{"Content-Type" : "application/json"},
         body : JSON.stringify({

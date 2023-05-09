@@ -4,7 +4,7 @@ import axios from 'axios'
 const Admin = () => {
   const [result,setresult] = useState([])
   const getresult = async() =>{
-    const res = await axios.get("http://localhost:5000/api/show");
+    const res = await axios.get("https://elitmus-backend-cfra.onrender.com/api/show");
     console.log(res.data.data);
     // const arr = [...result,...res.data]
     // console.log(arr)
